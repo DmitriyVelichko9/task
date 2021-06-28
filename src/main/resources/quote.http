@@ -1,0 +1,63 @@
+POST http://localhost:8080/api/quote
+Content-Type: application/json
+
+{
+  "isin" : "RU000A0JX0J2",
+  "bid" : 100.2,
+  "ask" : 101.9
+}
+
+###
+
+POST http://localhost:8080/api/quote
+Content-Type: application/json
+
+{
+  "isin" : "RU000A0JX0J2",
+  "bid" : 100.5,
+  "ask" : 101.9
+}
+
+###
+
+POST http://localhost:8080/api/quote
+Content-Type: application/json
+
+{
+  "isin" : "RU000A0JX0J2",
+  "bid" : 102.5,
+  "ask" : 101.9
+}
+
+###
+
+POST http://localhost:8080/api/quote
+Content-Type: application/json
+
+{
+  "isin" : "RU000",
+  "bid" : 100.5,
+  "ask" : 101.9
+}
+
+###
+
+GET http://localhost:8080/api/quote/elvls
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/quote/elvls/RU000A0JX0J2
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/quote/eLvls/RU839H
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/quote
+Accept: application/json
+
+###
